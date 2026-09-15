@@ -1,65 +1,21 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
-description: A growing collection of your cool projects.
 nav: true
-nav_order: 3
-display_categories: [work, fun]
-horizontal: false
+nav_order: 2
 ---
 
-<!-- pages/projects.md -->
-<div class="projects">
-{% if site.enable_project_categories and page.display_categories %}
-  <!-- Display categorized projects -->
-  {% for category in page.display_categories %}
-  <a id="{{ category }}" href=".#{{ category }}">
-    <h2 class="category">{{ category }}</h2>
-  </a>
-  {% assign categorized_projects = site.projects | where: "category", category %}
-  {% assign sorted_projects = categorized_projects | sort: "importance" %}
-  <!-- Generate cards for each project -->
-  {% if page.horizontal %}
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-  {% endfor %}
+## Data-driven predictive control for F1TENTH
 
-{% else %}
+**University of Wisconsin–Madison · Research with Jeremy Coulson**
 
-<!-- Display projects without categories -->
+I explore data-driven predictive control for autonomous racing using local affine models constructed from offline trajectory data. The controller uses vehicle tracking errors and motion measurements to choose steering-rate and acceleration inputs.
 
-{% assign sorted_projects = site.projects | sort: "importance" %}
+In simulation, the approach completed a lap using offline random data, with collision-avoidance checks enabled. This project connects data-driven control methods with the practical challenges of nonlinear vehicle dynamics and path tracking.
 
-  <!-- Generate cards for each project -->
+## Inverse kinematics and trajectory optimization
 
-{% if page.horizontal %}
+**Samsung R&D · Summer 2025**
 
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-{% endif %}
-</div>
+I worked on inverse kinematics and trajectory optimization, exploring numerical optimization and geometric methods including Levenberg–Marquardt, L-BFGS, CCDIK, and FABRIK. My work also involved ROS and coordinate-frame transformations.
