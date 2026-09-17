@@ -42,6 +42,6 @@ I have worked with Jingqi Li and David Fridovich-Keil at UT Austin on inverse dy
 - **Multi-agent interaction under information asymmetry:** inferring objectives from the behavior of decision-makers and understanding how interactions shape what can be learned.
 - **Data-driven predictive control:** learning dynamics from trajectory data and using them to plan and control motion.
 
-See my [research paper]({{ '/publications/' | relative_url }}) and [projects]({{ '/projects/' | relative_url }}).
+See my [research paper]({{ '/publications/' | relative_url }}).
 
 Outside research, I enjoy soccer games and coffee.

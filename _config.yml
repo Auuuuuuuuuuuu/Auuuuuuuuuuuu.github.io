@@ -218,6 +218,7 @@ kramdown:
 # Includes & excludes
 include: ["_pages"]
 exclude:
+  - _pages/projects.md
   - _pages/plugins.md
   - _pages/dropdown.md
   - _pages/about_einstein.md
