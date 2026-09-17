@@ -17,7 +17,7 @@ latest_posts:
 
 <style>
   article .profile {
-    width: 140px;
+    width: 180px;
     max-width: 40%;
   }
   article .profile img {
