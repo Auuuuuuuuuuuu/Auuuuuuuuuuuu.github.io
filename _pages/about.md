@@ -15,6 +15,24 @@ latest_posts:
   enabled: false
 ---
 
+<style>
+  .profile {
+    width: 200px;
+    max-width: 40%;
+  }
+  .profile img {
+    width: 100%;
+    height: auto;
+  }
+  @media (max-width: 575px) {
+    .profile {
+      float: none !important;
+      max-width: 100%;
+      margin: 0 auto 1.5rem;
+    }
+  }
+</style>
+
 I am **Zhiyuan Jin**,  a mathematics undergraduate at the University of Wisconsin–Madison. My research interests lie in control, optimization, and machine learning for autonomous systems and robotics.
 
 I have worked with Jingqi Li and David Fridovich-Keil at UT Austin on inverse dynamic games, and with Jeremy Coulson at UW–Madison on data-driven control.
