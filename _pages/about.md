@@ -16,16 +16,16 @@ latest_posts:
 ---
 
 <style>
-  .profile {
-    width: 200px;
+  article .profile {
+    width: 140px;
     max-width: 40%;
   }
-  .profile img {
+  article .profile img {
     width: 100%;
     height: auto;
   }
   @media (max-width: 575px) {
-    .profile {
+    article .profile {
       float: none !important;
       max-width: 100%;
       margin: 0 auto 1.5rem;
